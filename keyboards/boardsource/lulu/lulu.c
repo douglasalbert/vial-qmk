@@ -38,7 +38,7 @@ bool oled_task_kb(void) {
     if (is_keyboard_master()) {
         render_layer_state();
     } else {
-        oled_write_raw_P(bs_logo_img, sizeof(bs_logo_img));
+        oled_write_raw_P(lulu_logo_img, sizeof(lulu_logo_img));
     }
     return false;
 }
